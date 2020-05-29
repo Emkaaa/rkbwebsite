@@ -11,10 +11,11 @@
 }
 
 .article-title{
-    margin-top: 5%;
+    margin: 2.5% 0px;
     grid-column: 2/3;
     font-size: 2.5em;
     padding: 5px;
+
 }
 
 .article-carousel{
@@ -25,6 +26,9 @@
 .article-text{
     grid-column: 2/3;
     padding: 5px;
+    text-align: justify;
+    margin: 2.5% 0px;
+
 }
 
 .article-footer{

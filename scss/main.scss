@@ -1,5 +1,6 @@
 @import "news";
 @import "article";
+@import "about";
 
 .main-container{
  
@@ -7,7 +8,7 @@
     overflow-x: hidden;
     display: grid;
     grid-gap: 0px;
-    grid-template-columns: 10% 27.5% 27.5% 25% 10%;
+    grid-template-columns: 15% 22.5% 22.5% 25% 15%;
     grid-template-rows: min-content min-content min-content min-content;
 
 }
@@ -34,8 +35,8 @@
 
 .main-table{
     grid-column: 4/5;
-    grid-row: 2/4;
-    padding: 5px;
+    grid-row: 2/5;
+    padding: 20px;
 }
 
 .main-match-prev{
@@ -57,7 +58,7 @@
 
 .main-footer{
     grid-column: 1/6;
-    grid-row: 4/5;
+    grid-row: 5/6;
 }
 
 
@@ -86,6 +87,7 @@
     .main-match-next{
         grid-column: 2/3;
         grid-row: 3/4;
+        
     }
 
     .main-match-prev{
