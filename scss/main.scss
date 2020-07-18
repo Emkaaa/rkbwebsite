@@ -5,18 +5,22 @@
 
 
 .main-container{
- 
-    width: 100%;
-    overflow-x: hidden;
+    
     display: grid;
     grid-gap: 0px;
     grid-template-columns: 15% 22.5% 22.5% 25% 15%;
-    grid-template-rows: min-content min-content min-content min-content;
+    grid-template-rows: min-content min-content 12.65625vw min-content;
+    
+    width: 100%;
+    
+    overflow-x: hidden;
+    
 }
 
 .main-header{
     grid-column: 1/6;
     grid-row: 1/2;
+    
     margin-bottom: 1%;
 }
 
@@ -27,12 +31,14 @@
 .main-carousel{
     grid-column: 2/4;
     grid-row: 2/3;
+    
     margin-bottom: 1%;
 }
 
 .main-table{
     grid-column: 4/5;
     grid-row: 2/5;
+    
     padding-left: 2%;
 }
 
@@ -44,80 +50,189 @@
     text-align: start;
 }
 
+// PREV MATCH-----------------------------------------------------------------------------------------------
+
 .main-match-prev{
+    position: relative;
+
     grid-column: 2/3;
     grid-row: 3/4;
 
     margin-bottom: 3%;
-    padding-right: 1%;
+    margin-right: 1%;
+
+    background-color: rgb(33,150,243);
+    color: white;
+
 }
 
+.prev-logo{
+    width: 40%;
+    height: 60%;
+
+    position: absolute;
+    text-align: center;
+}
+
+.prev-logo img{
+    height: 100%;
+}
+
+#prev-home-logo{
+    top: 10%;
+    left: 0px;
+}
+
+#prev-guest-logo{
+    top: 10%;
+    right: 0px;
+}
+
+.prev-name{
+    position: absolute;
+    
+    width: 40%;
+}
+
+#prev-guest-name{
+    right: 0px;
+    top: 75%;
+
+    text-align: center;
+}
+
+#prev-home-name{
+    left: 0px;
+    top: 75%;
+    
+    text-align: center;
+}
+
+#prev-date{
+    position: absolute;
+    
+    top: 70%;
+    width: 100%;
+    
+    text-align: center;
+}
+
+#prev-time{
+    top: 85%;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+}
+
+#prev-round{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    margin-top: 2%;
+}
+
+.prev-score{
+    position: absolute;
+    
+    width: 85%;
+    height: min-content;
+    
+    text-align: center;
+    
+    top: 40%;
+    color: black;
+
+}
+
+.prev-score span{
+    background-color: white;
+    padding: 5px;
+}
+
+#prev-home-score{
+    left: 0px;
+}
+
+#prev-guest-score{
+    right: 0px;
+}
+
+
+// NEXT MATCH ----------------------------------------------------------------------------------------------
+
 .main-match-next{
+    position: relative;
+    
     grid-column: 3/4;
     grid-row: 3/4;
     
     margin-bottom: 3%;
-    padding-left: 1%;
+    margin-left: 1%;
 
     background-color: rgb(33,150,243);
     color: white;
     
-    position: relative;
 }
 
-.team-logo{
+.next-logo{
     width: 40%;
     height: 60%;
+
     position: absolute;
     text-align: center;
 }
 
-.team-logo img{
+.next-logo img{
     height: 100%;
 }
 
-#home-team-logo{
+#next-home-logo{
     top: 10%;
     left: 0px;
 }
 
-#guest-team-logo{
+#next-guest-logo{
     top: 10%;
     right: 0px;
 }
 
-.team-name{
+.next-name{
+    position: absolute;
+    
     width: 40%;
-    position: absolute;
 }
 
-#guest-team-name{
+#next-guest-name{
     right: 0px;
     top: 75%;
+
     text-align: center;
 }
 
-#home-team-name{
+#next-home-name{
     left: 0px;
     top: 75%;
+    
     text-align: center;
 }
 
-#match-next-date{
+#next-date{
+    position: absolute;
+    
     top: 40%;
+    width: 100%;
+    
+    text-align: center;
+}
+
+#next-time{
+    top: 55%;
     text-align: center;
     position: absolute;
     width: 100%;
 }
 
-#match-next-time{
-    top: 50%;
-    text-align: center;
-    position: absolute;
-    width: 100%;
-}
-
-#match-next-round{
+#next-round{
     position: absolute;
     width: 100%;
     text-align: center;
@@ -139,7 +254,7 @@
 @media only screen and (max-width: 1200px) {
     .main-container{
         grid-template-columns: 10% 40% 40% 10%;
-        grid-template-rows: min-content min-content min-content auto auto min-content;
+        grid-template-rows: min-content min-content 22.5vw auto auto min-content;
     }
 
     .main-header{
@@ -155,17 +270,23 @@
     .main-table{
         grid-column: 2/4;
         grid-row: 4/5;
+        
         padding: 0px;
+        font-size: 14px;
     }
 
     .main-match-prev{
         grid-column: 2/3;
         grid-row: 3/4;
+
+        font-size: 14px;
     }
     
     .main-match-next{
         grid-column: 3/4;
         grid-row: 3/4;
+
+        font-size: 14px;
     }
 
     .main-footer{
@@ -180,10 +301,40 @@
 
   }
 
-  @media only screen and (max-width: 800px) {
+@media only screen and (max-width: 800px) {
     .main-container{
         grid-template-columns: 5% 45% 45% 5%;
+        grid-template-rows: min-content min-content 25.3125vw auto auto min-content;
     }
+
+    .main-match-next{
+        font-size: 12px;
     }
+
+    .next-name{
+        font-size: 14px;
+    }
+    
+    #next-time{
+        top: 55%;
+    }
+
+    #next-round{
+        font-size: 14px;
+    }
+
+    .main-match-prev{
+        font-size: 12px;
+    }
+
+    .prev-name{
+        font-size: 14px;
+    }
+
+    #prev-round{
+        font-size: 14px;
+    }
+
+}
 
 /* MEDIA QUERY - END */
