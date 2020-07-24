@@ -1,7 +1,7 @@
 .news-container {
   width: 100%;
   display: grid;
-  grid-template-columns: 20% 60% 20%;
+  grid-template-columns: 25% 50% 25%;
   grid-gap: 0px;
   overflow-x: hidden;
 }
@@ -137,7 +137,7 @@
 .about-container {
   width: 100%;
   display: grid;
-  grid-template-columns: 20% 60% 20%;
+  grid-template-columns: 25% 50% 25%;
 }
 
 .about-header {
@@ -177,7 +177,7 @@
 }
 .results-container {
   display: grid;
-  grid-template-columns: 20% 60% 20%;
+  grid-template-columns: 25% 50% 25%;
 }
 
 .results-header {
@@ -262,6 +262,20 @@
     grid-template-columns: 5% 90% 5%;
   }
 }
+.contact-container {
+  display: grid;
+  grid-template-columns: 25% 50% 25%;
+}
+
+.contact-header {
+  grid-column: 1/4;
+  margin-bottom: 1%;
+}
+
+.contact-form {
+  grid-column: 2/3;
+}
+
 .main-container {
   display: grid;
   grid-gap: 0px;

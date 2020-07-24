@@ -1,0 +1,13 @@
+.contact-container{
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+}
+
+.contact-header{
+    grid-column: 1/4;
+    margin-bottom: 1%;
+}
+
+.contact-form{
+    grid-column: 2/3;
+}
