@@ -5,9 +5,46 @@
 
 .contact-header{
     grid-column: 1/4;
-    margin-bottom: 1%;
 }
 
 .contact-form{
     grid-column: 2/3;
+    margin-top: 5%;
+}
+
+.contact-footer{
+    grid-column: 1/4;
+}
+
+.contact-sponsors{
+    background-color:rgb(33,150,243);
+    grid-column: 1/4;
+    text-align: center;
+    margin-top: 5%;
+}
+
+.contact-sponsors img{
+    height: 10vh;
+    padding: 1%;
+}
+
+@media only screen and (max-width: 1200px){
+    .contact-container{
+    grid-template-columns: 15% 70% 15%;}
+
+    .contact-sponsors img{
+        height: 10vh;
+        padding: 2%;
+    }
+
+}
+
+@media only screen and (max-width: 800px){
+    .contact-container{
+    grid-template-columns: 5% 90% 5%;}
+
+    .main-sponsors img{
+        height: 7.5vh;
+        padding: 2%;
+    }
 }
