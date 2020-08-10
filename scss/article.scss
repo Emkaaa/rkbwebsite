@@ -3,9 +3,8 @@
     background-size: cover;
     width: 100%;
     display: grid;
-    grid-gap: 0px;
-    overflow-x: hidden;
     grid-template-columns: 20% 40% 20% 20% ; 
+    overflow-x: hidden;
 }
 
 .article-header{
@@ -13,10 +12,10 @@
 }
 
 .article-title{
-    margin: 2.5% 0px;
     grid-column: 2/3;
-    font-size: 2.5em;
-    padding: 5px;
+    margin: 5% 0%;
+    font-size: 3em;
+    font-weight: bolder;
 
 }
 
@@ -27,10 +26,10 @@
 
 .article-text{
     grid-column: 2/3;
-    padding: 5px;
-    text-align: justify;
     margin: 2.5% 0px;
-
+    padding: 5px;
+    font-size: 1em;
+    text-align: justify;
 }
 
 .article-footer{
@@ -41,16 +40,18 @@
 .article-side-news{
     grid-column: 3/4;
     grid-row: 2/6;
-    padding: 5%;
+    padding-top: 15%;
+    padding-left: 5%;
 
     .card{
-        margin: 20px 20px;
+        margin: 5% 0px;
     }
 }
 
-.side-news-title h5{
+.side-news-title{
     margin-left: 5%;
-    text-align: start;
+    font-size: 2em;
+    font-weight: 400;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -82,14 +83,23 @@
         grid-row: 3/4;
     }
     .article-title{
-        font-size: 1.5em;
         grid-column: 2/3;
         grid-row: 2/3;
     }
     .article-side-news{
-        grid-row: 5/6;
         grid-column: 2/3;
-        padding: 5%;
+        grid-row: 5/6;
+        padding: 0%;
+    }
+
+    .side-news-title{
+        margin: 0px;
+        padding: 0px;
+        text-align: center;
+    }
+
+    .card{
+
     }
 
 }
