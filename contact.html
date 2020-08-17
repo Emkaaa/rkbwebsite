@@ -17,6 +17,8 @@
   <link rel="stylesheet" href="mdb/css/mdb.min.css">
   <!-- Your custom styles (optional) -->
   <link rel="stylesheet" href="css/main.css">
+  
+  <link rel="icon" href="img/logo.png">
 
 </head>
 <body>
@@ -66,14 +68,14 @@
       <p class="h4 mb-4">Contact us</p>
 
       <!-- Name -->
-      <input type="text" id="defaultContactFormName" class="form-control mb-4" placeholder="Name">
+      <input type="text" id="defaultContactFormName" class="form-control mb-4" placeholder="Name" name="name">
 
       <!-- Email -->
-      <input type="email" id="defaultContactFormEmail" class="form-control mb-4" placeholder="E-mail">
+      <input type="email" id="defaultContactFormEmail" class="form-control mb-4" placeholder="E-mail" name="email">
 
       <!-- Subject -->
       <label>Subject</label>
-      <select class="browser-default custom-select mb-4">
+      <select class="browser-default custom-select mb-4" name="subject">
           <option value="" disabled>Choose option</option>
           <option value="1" selected>Feedback</option>
           <option value="2">Report a bug</option>
@@ -83,13 +85,7 @@
 
       <!-- Message -->
       <div class="form-group">
-          <textarea class="form-control rounded-0" id="exampleFormControlTextarea2" rows="3" placeholder="Message"></textarea>
-      </div>
-
-      <!-- Copy -->
-      <div class="custom-control custom-checkbox mb-4">
-          <input type="checkbox" class="custom-control-input" id="defaultContactFormCopy">
-          <label class="custom-control-label" for="defaultContactFormCopy">Send me a copy of this message</label>
+          <textarea class="form-control rounded-0" id="exampleFormControlTextarea2" rows="3" placeholder="Message" name="message"></textarea>
       </div>
 
       <!-- Send button -->
@@ -145,8 +141,6 @@
   </div>
 
 </div>
-
-
 
   <!-- jQuery -->
   <script type="text/javascript" src="mdb/js/jquery.min.js"></script>
