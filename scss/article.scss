@@ -9,6 +9,7 @@
 
 .article-header{
     grid-column: 1/5;
+    font-size: 1.25em;
 }
 
 .article-title{
@@ -65,6 +66,9 @@
     .article-container{
         grid-template-columns: 5% 90% 5%;
     }  
+
+    .article-title{
+    }
 
     .article-header{
         grid-column: 1/4;

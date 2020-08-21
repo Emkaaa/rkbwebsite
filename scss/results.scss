@@ -7,7 +7,8 @@
 
 .results-header{
     grid-column: 1/4;
-    margin-bottom: 1%
+    margin-bottom: 2.5%;
+    font-size: 1.25em;
 }   
 
 .results-table{
@@ -25,25 +26,30 @@
 
 .results-table table tbody td{
     text-align: center;
+    font-size: 1em !important;
 }
 
 .results-table table thead th{
     font-weight: bold;
+    font-size: 1em !important;
     text-align: center;
 }
 
 .results-fixtures table thead th{
     text-align: center;
+    font-size: 1em !important;
     font-weight: bold;
 }
 
 .results-fixtures table tbody td{
+    font-size: 1em !important;
     text-align: center;
 }
 
 #tab-col-name{
     text-align: start;
     font-size: 1em;
+    font-weight: 450 !important;
 }
 
 #tab-col-num{
@@ -84,34 +90,16 @@
     .results-container{
         grid-template-columns: 10% 80% 10%;
     }
-    
-    .results-header{
-        margin-bottom: 5%;
-    }
-
-    .results-table table thead th{
-        font-size: 13px;
-    }
-    
-    .results-table table tbody td{
-        font-size: 13px;
-    }
-
-    .results-fixtures table thead th{
-        font-size: 13px;
-    }
-    
-    .results-fixtures table tbody td{
-        font-size: 13px;
-    }
-
-
-
 }
 
 @media only screen and (max-width: 800px) {
+
     .results-container{
-        grid-template-columns: 5% 90% 5%;
+        grid-template-columns: 1% 98% 1%;
+    }
+
+    .results-header{
+        margin-bottom: 5%;
     }
 
     .results-table table{

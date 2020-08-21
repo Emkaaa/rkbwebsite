@@ -19,6 +19,7 @@
     grid-column: 1/6;
     grid-row: 1/2;
     margin-bottom: 2.5%;
+    font-size: 1.25em;
 }
 
 .nav-item{
@@ -28,7 +29,7 @@
 .main-carousel{
     grid-column: 2/4;
     grid-row: 2/3;
-    margin-bottom: 1%;
+    margin-bottom: 2.5%;
     background-color: white;
 }
 
@@ -47,12 +48,12 @@
 
 .main-table table tr td{
     text-align: center;
+    font-size: 1em !important;
 }
 
 #tab-col-name{
     text-align: start;
-    font-weight: bold;
-
+    font-weight: 450;
 }
 
 #tab-col-point{
@@ -133,15 +134,14 @@
 }
 
 .prev-score{
-    position: absolute;
-    width: 88%;
     height: min-content;
+    width: 88%;
+    position: absolute;
+    top: 33%;
     text-align: center;
-    top: 35%;
-    font-size: 1.75em;
     color: white;
+    font-size: 1.75em;
     font-weight: 400;
-
 }
 
 .prev-score span{
@@ -310,7 +310,7 @@
 
 @media only screen and (max-width: 800px) {
     .main-container{
-        grid-template-columns: 5% 90% 5%;
+        grid-template-columns: 1% 98% 1%;
         grid-template-rows: min-content min-content 35vw 35vw auto auto min-content;
     }
 
@@ -345,7 +345,7 @@
     .main-table{
         grid-column: 2/3;
         grid-row: 5/6;
-        margin-top: 1%;
+        margin-top: 2.5%;
     }
 
     .main-table table{
