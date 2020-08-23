@@ -11,7 +11,7 @@
 .news-header {
   grid-column: 1/4;
   margin-bottom: 2.5%;
-  font-size: 1.25em;
+  font-size: 1.25em !important;
 }
 
 .news-mid {
@@ -73,7 +73,7 @@
 
 .article-header {
   grid-column: 1/5;
-  font-size: 1.25em;
+  font-size: 1.25em !important;
 }
 
 .article-title {
@@ -174,12 +174,13 @@
   width: 100%;
   display: grid;
   grid-template-columns: 25% 50% 25%;
+  font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
 }
 
 .about-header {
   grid-column: 1/4;
   grid-row: 1/2;
-  font-size: 1.25em;
+  font-size: 1.25em !important;
 }
 
 .about-content {
@@ -195,7 +196,6 @@
 
 .about-content p {
   margin: 20px 0px;
-  font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
 }
 
 .about-footer {
@@ -224,7 +224,7 @@
 .results-header {
   grid-column: 1/4;
   margin-bottom: 2.5%;
-  font-size: 1.25em;
+  font-size: 1.25em !important;
 }
 
 .results-table {
@@ -336,7 +336,7 @@
 
 .contact-header {
   grid-column: 1/4;
-  font-size: 1.25em;
+  font-size: 1.25em !important;
   margin-bottom: 5%;
 }
 
@@ -388,7 +388,7 @@
 }
 
 .gallery-header {
-  font-size: 1.25em;
+  font-size: 1.25em !important;
 }
 
 .main-container {
@@ -407,7 +407,7 @@
   grid-column: 1/6;
   grid-row: 1/2;
   margin-bottom: 2.5%;
-  font-size: 1.25em;
+  font-size: 1.25em !important;
 }
 
 .nav-item {

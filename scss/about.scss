@@ -4,12 +4,13 @@
     width: 100%;
     display: grid;
     grid-template-columns: 25% 50% 25%;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
 }
 
 .about-header{
     grid-column: 1/4;
     grid-row: 1/2;
-    font-size: 1.25em;
+    font-size: 1.25em !important;
 }
 
 .about-content{
@@ -25,7 +26,6 @@
 
 .about-content p{
     margin: 20px 0px;
-    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
 }
 
 .about-footer{
