@@ -5,6 +5,7 @@
     display: grid;
     grid-template-columns: 20% 40% 20% 20% ; 
     overflow-x: hidden;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .article-header{
@@ -15,7 +16,7 @@
 .article-title{
     grid-column: 2/3;
     margin: 5% 0%;
-    font-size: 2.5em;
+    font-size: 3em;
     font-weight: bolder;
 
 }
@@ -29,7 +30,7 @@
     grid-column: 2/3;
     margin: 2.5% 0px;
     padding: 5px;
-    font-size: 1em;
+    font-size: 1.25em;
     text-align: justify;
 }
 
@@ -68,15 +69,17 @@
     }  
 
     .article-title{
-        font-size: 2em;
+        font-size: 2.5em;
     }
 
     .article-header{
         grid-column: 1/4;
         grid-row: 1/2;
+        margin-bottom: 5%;
     }
     .article-footer{
         grid-column: 1/4;
+        margin-top: 5%;
     }
     .article-text{
         grid-column: 2/3;

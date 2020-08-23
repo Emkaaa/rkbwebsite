@@ -3,6 +3,7 @@
     background-size: cover;
     display: grid;
     grid-template-columns: 25% 50% 25%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .results-header{
@@ -49,7 +50,7 @@
 #tab-col-name{
     text-align: start;
     font-size: 1em;
-    font-weight: 450 !important;
+    font-weight: 500 !important;
 }
 
 #tab-col-num{
@@ -82,7 +83,7 @@
 
 .results-footer{
     grid-column: 1/4;
-    margin-top: 1%;
+    margin-top: 2.5%;
 }
 
 
@@ -100,6 +101,10 @@
 
     .results-header{
         margin-bottom: 5%;
+    }
+
+    .results-footer{
+        margin-top: 5%;
     }
 
     .results-table table{

@@ -3,6 +3,7 @@
 @import "about";
 @import "results";
 @import "contact";
+@import "gallery";
 
 .main-container{
     
@@ -13,6 +14,7 @@
     grid-template-columns: 15% 22.5% 22.5% 25% 15%;
     grid-template-rows: min-content min-content 12.5vw min-content;
     overflow-x: hidden;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .main-header{
@@ -33,6 +35,10 @@
     background-color: white;
 }
 
+.carousel-caption{
+    font-size: 1.5em !important;
+}
+
 .main-table{
     grid-column: 4/5;
     grid-row: 2/5;
@@ -48,7 +54,7 @@
 
 .main-table table tr td{
     text-align: center;
-    font-size: 1em !important;
+    font-size: 1.1em !important;
 }
 
 #tab-col-name{
@@ -258,6 +264,12 @@
 
 
 /* MEDIA QUERY - START */
+@media only screen and (max-width: 1400px){
+    .prev-score{
+        font-size: 1.5em;
+    }
+}
+
 @media only screen and (max-width: 1200px) {
     .main-container{
         grid-template-columns: 10% 40% 40% 10%;
@@ -287,6 +299,10 @@
         grid-row: 3/4;
     }
     
+    .prev-score{
+        font-size: 1.75em;
+    }
+
     .main-match-next{
         grid-column: 3/4;
         grid-row: 3/4;
@@ -322,6 +338,10 @@
     .main-carousel{
         grid-column: 2/3;
         grid-row: 2/3;
+    }
+
+    .carousel-caption{
+        font-size: 1.25em !important;
     }
 
     .main-match-next{
