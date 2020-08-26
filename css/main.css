@@ -342,8 +342,13 @@
 
 .contact-form {
   grid-column: 2/3;
+  padding: 2.5%;
   background-color: white;
   box-shadow: 21px 21px 47px -2px #c2c2c2;
+}
+
+.form-control.md-textarea {
+  min-height: 150px;
 }
 
 .contact-sponsors {
@@ -372,6 +377,10 @@
     height: 10vh;
     padding: 2%;
   }
+
+  .form-control.md-textarea {
+    min-height: 0px;
+  }
 }
 @media only screen and (max-width: 800px) {
   .contact-container {
@@ -385,6 +394,8 @@
 }
 .gallery-container {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-image: url(../img/background2.jpg);
+  background-size: cover;
 }
 
 .gallery-header {

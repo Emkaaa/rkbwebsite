@@ -54,7 +54,7 @@
             <a class="nav-link" href="gallery.html">Galerija </a>
         </li>
         <li class="nav-item active">
-          <a class="nav-link" href="contact.html">Kontakt <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="contact.php">Kontakt <span class="sr-only">(current)</span></a>
         </li>
         </ul>
     </div>
@@ -63,35 +63,88 @@
 
   <div class="contact-form">
     
-    <form class="text-center border border-light p-5" action="#!">
+    <!--Section: Contact v.2-->
+<section class="mb-4">
 
-      <p class="h4 mb-4">Contact us</p>
+<!--Section heading-->
+<h2 class="h1-responsive font-weight-bold text-center my-4">Kontaktirajte nas</h2>
 
-      <!-- Name -->
-      <input type="text" id="defaultContactFormName" class="form-control mb-4" placeholder="Name" name="name">
+<div class="row">
 
-      <!-- Email -->
-      <input type="email" id="defaultContactFormEmail" class="form-control mb-4" placeholder="E-mail" name="email">
+    <!--Grid column-->
+    <div class="col-md-9 mb-md-0 mb-5">
+        <form id="contact-form" name="contact-form" action="mail.php" method="POST">
 
-      <!-- Subject -->
-      <label>Subject</label>
-      <select class="browser-default custom-select mb-4" name="subject">
-          <option value="" disabled>Choose option</option>
-          <option value="1" selected>Feedback</option>
-          <option value="2">Report a bug</option>
-          <option value="3">Feature request</option>
-          <option value="4">Feature request</option>
-      </select>
+            <!--Grid row-->
+            <div class="row">
 
-      <!-- Message -->
-      <div class="form-group">
-          <textarea class="form-control rounded-0" id="exampleFormControlTextarea2" rows="3" placeholder="Message" name="message"></textarea>
-      </div>
+                <!--Grid column-->
+                <div class="col-md-6">
+                    <div class="md-form mb-0">
+                        <input type="text" id="name" name="name" class="form-control">
+                        <label for="name" class="">Vaše ime</label>
+                    </div>
+                </div>
+                <!--Grid column-->
 
-      <!-- Send button -->
-      <button class="btn btn-info btn-block" type="submit">Send</button>
+                <!--Grid column-->
+                <div class="col-md-6">
+                    <div class="md-form mb-0">
+                        <input type="text" id="email" name="email" class="form-control">
+                        <label for="email" class="">Vaša email adresa</label>
+                    </div>
+                </div>
+                <!--Grid column-->
 
-    </form>
+            </div>
+            <!--Grid row-->
+
+            <!--Grid row-->
+            <div class="row">
+
+                <!--Grid column-->
+                <div class="col-md-12">
+
+                    <div class="md-form">
+                        <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                        <label for="message">Vaša poruka</label>
+                    </div>
+
+                </div>
+            </div>
+            <!--Grid row-->
+
+        </form>
+
+        <div class="text-center text-md-left">
+            <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
+        </div>
+        <div class="status"></div>
+    </div>
+    <!--Grid column-->
+
+    <!--Grid column-->
+    <div class="col-md-3 text-center">
+        <ul class="list-unstyled mb-0">
+            <li><i class="fas fa-map-marker-alt fa-2x"></i>
+                <p>Viteška 2, Sarajevo 71000, BiH</p>
+            </li>
+
+            <li><i class="fas fa-phone mt-4 fa-2x"></i>
+                <p>+387 60 332 7095</p>
+            </li>
+
+            <li><i class="fas fa-envelope mt-4 fa-2x"></i>
+                <p>rkbrijesce.info@gmail.com</p>
+            </li>
+        </ul>
+    </div>
+    <!--Grid column-->
+
+</div>
+
+</section>
+<!--Section: Contact v.2-->
   
   </div>
 
