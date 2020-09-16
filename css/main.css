@@ -1,5 +1,5 @@
 .news-container {
-  background-image: url(../img/background2.jpg);
+  background-image: url(../img/background.jpg);
   background-size: cover;
   width: 100%;
   display: grid;
@@ -62,7 +62,7 @@
 }
 /* MEDIA QUERY - END */
 .article-container {
-  background-image: url(../img/background2.jpg);
+  background-image: url(../img/background.jpg);
   background-size: cover;
   width: 100%;
   display: grid;
@@ -169,7 +169,7 @@
   }
 }
 .about-container {
-  background-image: url(../img/background2.jpg);
+  background-image: url(../img/background.jpg);
   background-size: cover;
   width: 100%;
   display: grid;
@@ -214,7 +214,7 @@
   }
 }
 .results-container {
-  background-image: url(../img/background2.jpg);
+  background-image: url(../img/background.jpg);
   background-size: cover;
   display: grid;
   grid-template-columns: 25% 50% 25%;
@@ -327,7 +327,7 @@
   }
 }
 .contact-container {
-  background-image: url(../img/background2.jpg);
+  background-image: url(../img/background.jpg);
   background-size: cover;
   display: grid;
   grid-template-columns: 25% 50% 25%;
@@ -342,13 +342,31 @@
 
 .contact-form {
   grid-column: 2/3;
-  padding: 2.5%;
+  padding: 5%;
   background-color: white;
   box-shadow: 21px 21px 47px -2px #c2c2c2;
 }
 
-.form-control.md-textarea {
-  min-height: 150px;
+.contact-form-title {
+  width: 100%;
+  text-align: center !important;
+}
+
+.contact-adress {
+  text-align: center;
+}
+
+.contact-phone {
+  text-align: center;
+}
+
+.contact-email {
+  text-align: center;
+}
+
+.md-textarea {
+  width: 100%;
+  min-height: 100px;
 }
 
 .contact-sponsors {
@@ -378,23 +396,31 @@
     padding: 2%;
   }
 
-  .form-control.md-textarea {
-    min-height: 0px;
+  .contact-form-submit {
+    text-align: center;
   }
 }
 @media only screen and (max-width: 800px) {
   .contact-container {
-    grid-template-columns: 1% 98% 1%;
+    grid-template-columns: 3% 94% 3%;
+  }
+
+  .contact-form-title {
+    font-size: 0.75em !important;
+  }
+
+  .contact-form-submit {
+    margin-bottom: 5%;
   }
 
   .contact-sponsors img {
-    height: 7.5vh;
+    height: 10vh;
     margin: 2.5%;
   }
 }
 .gallery-container {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background-image: url(../img/background2.jpg);
+  background-image: url(../img/background.jpg);
   background-size: cover;
 }
 
@@ -403,7 +429,7 @@
 }
 
 .main-container {
-  background-image: url(../img/background2.jpg);
+  background-image: url(../img/background.jpg);
   background-size: cover;
   width: 100%;
   display: grid;
@@ -772,7 +798,7 @@
   }
 
   .main-sponsors img {
-    height: 7.5vh;
+    height: 10vh;
     margin: 2.5%;
   }
 }
