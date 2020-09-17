@@ -59,7 +59,12 @@
     $mailheader = "From: $email \r\n";
     
     mail($recipient, $subject, $content, $mailheader) or die("Error!");
-    echo "<div class = 'message-sent'><h1>Email sent!</h1></div>";
+    echo '<div class="mail-container">';
+    echo '  <div class = "message-sent">';
+    echo '    <p>Vaša poruka je uspješno poslana!</p>';
+    echo '    <a href="index.html"><button class="btn blue-gradient"><i class="fas fa-arrow-circle-left"></i></button></a>';
+    echo '  </div>';
+    echo '</div>';
     ?>
 
   </div>

@@ -365,8 +365,9 @@
 }
 
 .md-textarea {
-  width: 100%;
-  min-height: 100px;
+  width: 100% !important;
+  min-width: 100% !important;
+  min-height: 100px !important;
 }
 
 .contact-sponsors {
@@ -416,6 +417,46 @@
   .contact-sponsors img {
     height: 10vh;
     margin: 2.5%;
+  }
+}
+.mail-container {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../img/background.jpg");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.message-sent {
+  background-color: white;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 21px 21px 47px -2px #c2c2c2;
+}
+
+.message-sent p {
+  font-size: 3em;
+  font-weight: 450;
+}
+
+.message-sent button {
+  font-size: 2em;
+}
+
+@media only screen and (max-width: 800px) {
+  .message-sent {
+    max-width: 80%;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .message-sent {
+    max-width: 95%;
+  }
+
+  .message-sent p {
+    font-size: 2.5em;
   }
 }
 .gallery-container {
